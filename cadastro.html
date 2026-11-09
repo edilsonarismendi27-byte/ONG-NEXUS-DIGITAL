@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | ONG Nexus Digital</title><link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho"><div class="marca"><img src="img/logo.jpg" alt="Logo Nexus Digital"><strong>ONG NEXUS DIGITAL</strong></div>
+        <nav class="menu"><a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="eventos.html">Eventos</a><a href="cadastro.html">Cadastro</a></nav>
+    </header>
+    <main class="conteudo">
+        <h1>Cadastro de Interesse</h1><p>Preencha os campos para testar o formulário. Este cadastro é apenas uma demonstração acadêmica e não envia dados para a ONG.</p>
+        <form class="formulario" id="formCadastro">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" minlength="3" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="interesse">Como deseja participar?</label>
+            <select id="interesse" name="interesse" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Cursos">Participar dos cursos</option>
+                <option value="Voluntariado">Ser voluntário</option>
+                <option value="Doações">Ajudar com doações</option>
+            </select>
+
+            <p><button type="submit" class="botao">Enviar cadastro</button></p>
+            <p id="mensagem" class="mensagem" aria-live="polite"></p>
+        </form>
+        <p><small>Atenção: os dados são armazenados somente no navegador utilizado, por meio de localStorage. Não use informações pessoais reais neste teste.</small></p>
+    </main>
+    <footer class="rodape">ONG Nexus Digital — Projeto acadêmico fictício | 2026</footer>
+</body>
+</html>
